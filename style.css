@@ -1,0 +1,10 @@
+/* Darken and label expired deal blocks */
+.status-badge.expired { background: #64748b; color: white; }
+.deal-card:has(.expired) {
+    opacity: 0.55;
+    filter: grayscale(40%);
+}
+.deal-card:has(.expired):hover {
+    border-color: #64748b;
+    transform: none;
+}
